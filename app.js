@@ -21,8 +21,7 @@ const db = mysql.createConnection ({
     host: app.get('host'),
     user: app.get('user'),
     password: app.get('password'),
-    database: app.get('database'),
-    socketPath: '/Applications/MAMP/tmp/mysql/mysql.sock'
+    database: app.get('database')
 });
 
 // connect to database
