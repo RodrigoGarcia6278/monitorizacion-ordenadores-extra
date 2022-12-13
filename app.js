@@ -9,7 +9,7 @@ const app = express();
 const playerRoutes = require('./routes/player.routes');
 const homeRoutes = require('./routes/index.routes');
 //const port = 2000;
-app.set('port', process.env.port || 2000); // set express to use this app.set('host', process.env.DB_HOST || 'localhost');
+app.set('port', process.env.port || 3000); // set express to use this app.set('host', process.env.DB_HOST || 'localhost');
 app.set('user', process.env.DB_USER || 'root');
 app.set('password', process.env.DB_PASSWORD || 'spyXfam_11');
 app.set('database', process.env.DB_NAME || 'socka');
