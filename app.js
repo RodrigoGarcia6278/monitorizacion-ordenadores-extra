@@ -14,7 +14,7 @@ app.set('host', process.env.DB_HOST || '127.0.0.1');
 app.set('user', process.env.DB_USER || 'root');
 app.set('password', process.env.DB_PASSWORD || 'spyXfam_11');
 app.set('database', process.env.DB_NAME || 'socka');
-
+app.set('portdb', process.env.DB_PORT || 3306);
 
 // create connection to database
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
@@ -22,7 +22,8 @@ const db = mysql.createConnection ({
     host: app.get('host'),
     user: app.get('user'),
     password: app.get('password'),
-    database: app.get('database')
+    database: app.get('database'),
+    port: app.get('portdb')
 });
 
 // connect to database
