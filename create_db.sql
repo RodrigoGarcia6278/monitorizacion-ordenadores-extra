@@ -16,3 +16,7 @@ drop table players;
 show tables;
 
 describe players;
+
+ALTER USER 'root' IDENTIFIED WITH mysql_native_password BY 'spyXfam_11';
+
+flush privileges;

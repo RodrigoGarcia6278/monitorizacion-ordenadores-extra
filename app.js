@@ -13,14 +13,14 @@ const db_host = process.env.db_host | 'localhost';
 const db_user = process.env.db_user | 'root';
 const db_password = process.env.db_password | 'spyXfam_11';
 const db_db = process.env.db_db | 'socka';
-//const db_port = process.env.db_port | 3306;
+const db_port = process.env.db_port | 3306;
 
 // create connection to database
 // the mysql.createConnection function takes in a configuration object which contains host, user, password and the database name.
 const db = mysql.createConnection ({
     host: db_host,
     user: db_user,
-    //port: db_port,
+    port: db_port,
     password: db_password,
     database: db_db
 });
